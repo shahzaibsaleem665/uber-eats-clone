@@ -1,9 +1,12 @@
 import './App.css';
+import Header from './Pages/Header';
+import Home from './Pages/Home';
 
 function App() {
   return (
     <div className="app">
-      <h1>Let's make uber eats clone</h1>
+     <Header />
+     <Home />
     </div>
   );
 }

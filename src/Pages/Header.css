@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: sticky;
+
+}
+.header__left {
+    display: flex;
+    flex: 0.1;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: space-evenly;
+
+}
+.header__left > .MuiSvgIcon-root {
+    font-size: 30px !important;
+}
+.header__middle {
+    display: flex;
+    flex: 0.3;
+    align-items: center;
+    background-color: #dcdcdc;
+    padding: 10px;
+    margin-left: -30%;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.header__middle > input { 
+    border: none;
+    width: 40%;
+    padding: 10px;
+    background-color: transparent;
+    outline-width: 0;
+    font-size: medium;
+    height: fit-content;
+}
+.header__right {
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 10px;
+}
+.header__signUp {
+    text-decoration: none !important;
+    color: white !important;
+    background-color: black !important;
+    border: none;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none !important;
+    border-radius: 50px !important;
+    font-size: 18px !important;
+    width: 90px;
+}
+.header__signIn {
+    text-decoration: none !important;
+    color: black !important;
+    background-color: white !important;
+    border: none;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none !important;
+    border-radius: 50px !important;
+    font-size: 18px !important;
+    width: 100px;
+    align-items: center;
+}
