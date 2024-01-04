@@ -8,14 +8,15 @@ import {
   Drawer,
   ListItem,
 } from '@mui/material';
-
-
-
+import AppleIcon from '@mui/icons-material/Apple';
+import AdbIcon from '@mui/icons-material/Adb';
+import main_logo from '../assets/main_logo.png'
 
 function Header() { 
      const [open, setOpen] = useState(false);
   const getList = () => (
-      <div style={{ width: 300 }} onClick={() => setOpen(false)} className='navbar__button'>
+      <div style={{ width: 300 }} onClick={() => setOpen(false)} className='navbar'>
+        <div className='navbar__top'>
           <ListItem>
           <Button className='listItem__register'>Sign up</Button>
           </ListItem>
@@ -33,10 +34,17 @@ function Header() {
               <p>Sign up to deliver</p>
             </ListItem>
           </div>
+          </div>
           <div className="navbar__bottom">
-          <ListItem>
-              <img />
+          <ListItem className='navbar__bottomIconList'>
+              <img  src={main_logo} />
+              <p>There's more to love in the app.</p>
             </ListItem>
+            <ListItem className='navbar__bottomButtons'>
+              <Button><AppleIcon /> Iphone</Button>
+              <Button><AdbIcon />Android</Button>
+            </ListItem>
+
           </div>
       </div>
     );
