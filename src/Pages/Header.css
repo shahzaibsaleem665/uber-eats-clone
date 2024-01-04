@@ -8,7 +8,7 @@
 }
 .header__left {
     display: flex;
-    flex: 0.1;
+    width: 300px;
     align-items: center;
     padding-left: 10px;
     justify-content: space-evenly;
@@ -30,7 +30,7 @@
 
 .header__middle > input { 
     border: none;
-    width: 40%;
+    width: auto;
     padding: 10px;
     background-color: transparent;
     outline-width: 0;
@@ -68,4 +68,36 @@
     font-size: 18px !important;
     width: 100px;
     align-items: center;
+}
+.listItem__register {
+    text-decoration: none !important;
+    color: white !important;
+    background-color: black !important;
+    border: none;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none !important;
+    border-radius: 10px !important;
+    font-size: 18px !important;
+    width: 250px;
+    height: 60px;
+}
+.listItem__login {
+    text-decoration: none !important;
+    color: black !important;
+    background-color: rgb(231, 231, 231) !important;
+    border: none;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: none !important;
+    border-radius: 10px !important;
+    font-size: 18px !important;
+    width: 250px;
+    height: 60px;
+    align-items: center;
+}
+.navbar__button {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
 }
