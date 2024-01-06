@@ -55,9 +55,13 @@
     margin-left: 10px;
     width: auto;
 }
-.Select {
+.select {
     background-color: white;
     color: black;
+    width: auto; /* Adjust the width as needed */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   
   /* Style the MenuItem components */
@@ -70,12 +74,11 @@
     flex-direction: row;
     align-items: center;
   }
-
+  
   /* Style the icons and text inside MenuItem */
-  .icon > .MuiSvgIcon-root  {
+  .icon > .MuiSvgIcon-root {
     color: black;
     margin-right: 10px;
-   
   }
   
   .text {

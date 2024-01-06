@@ -17,7 +17,7 @@ function Header() {
      const [hideHeaderMiddle, setHideHeaderMiddle] = useState(true);
    
      const handleScroll = () => {
-       if (window.scrollY > 40) {
+       if (window.scrollY >40) {
          setHideHeaderMiddle(false);
        } else {
          setHideHeaderMiddle(true);
@@ -73,7 +73,7 @@ function Header() {
     );
   
   return (
-    <div className={`header ${hideHeaderMiddle ? 'hideHeaderMiddle' : ''}`}>
+    <div className={`header ${hideHeaderMiddle ? 'hideHeaderMiddle' : 'showWhiteBackground'}`}>
         <div className="header__left">
         <MenuIcon onClick={() => setOpen(true)} />
             <p>Uber <strong>Eats</strong></p>
