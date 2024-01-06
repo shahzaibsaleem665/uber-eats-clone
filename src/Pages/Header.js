@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Header.css'
 import { Button } from '@mui/material'
 import PersonIcon from '@mui/icons-material/Person';
@@ -14,8 +14,31 @@ import main_logo from '../assets/main_logo.png'
 
 function Header() { 
      const [open, setOpen] = useState(false);
+     const [hideHeaderMiddle, setHideHeaderMiddle] = useState(true);
+   
+     const handleScroll = () => {
+       if (window.scrollY > 40) {
+         setHideHeaderMiddle(false);
+       } else {
+         setHideHeaderMiddle(true);
+       }
+     };
+   
+     useEffect(() => {
+       window.addEventListener('scroll', handleScroll);
+       return () => {
+         window.removeEventListener('scroll', handleScroll);
+       };
+     }, []);
+   
+   
+
+
+
+
+
   const getList = () => (
-      <div style={{ width: 300 }} onClick={() => setOpen(false)} className='navbar'>
+      <div style={{ width: 280 }} onClick={() => setOpen(false)} className='navbar'>
         <div className='navbar__top'>
           <ListItem>
           <Button className='listItem__register'>Sign up</Button>
@@ -50,10 +73,10 @@ function Header() {
     );
   
   return (
-    <div className='header'>
+    <div className={`header ${hideHeaderMiddle ? 'hideHeaderMiddle' : ''}`}>
         <div className="header__left">
         <MenuIcon onClick={() => setOpen(true)} />
-            <h1>Uber Eats</h1>
+            <p>Uber <strong>Eats</strong></p>
         </div>
         <div className="header__middle">
             <FmdGoodIcon />
