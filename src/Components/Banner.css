@@ -1,0 +1,98 @@
+.banner {
+    content: '';
+    background: url('/src/assets/home_bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+}
+.banner__container { 
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-top: 7%;
+    margin-left: 50px;
+}
+.banner__container > h1 {
+    font-size: 50px;
+}
+.banner__containerSearchBox  {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+
+.banner__containerSearch {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    width: 600px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.banner__containerSearch > input { 
+    border: none;
+    width: 600px;
+    padding: 10px;
+    background-color: transparent;
+    outline-width: 0;
+    font-size: medium;
+    height: fit-content;
+}
+.banner__containerSearchSelectButton  {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: auto;
+}
+.Select {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Style the MenuItem components */
+  .MenuItem {
+    background-color: white !important;
+    height: 50px;
+    color: black;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Style the icons and text inside MenuItem */
+  .icon > .MuiSvgIcon-root  {
+    color: black;
+    margin-right: 10px;
+   
+  }
+  
+  .text {
+    color: black !important;
+  }
+.banner__containerSearchSelectButton > Button {
+    background-color: black;
+    margin-left: 10px;
+    color: white;
+    border-radius: 5px;
+    height: 60px;
+    font-weight: 500 !important;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding: 15px;
+} 
+.banner__containerSearchSelectButton > Button:hover {
+    cursor: pointer;
+    background-color: black;
+}

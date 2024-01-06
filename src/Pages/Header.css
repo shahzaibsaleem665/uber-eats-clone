@@ -1,15 +1,13 @@
-.header {
+.header  {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    position: sticky ;
     margin-top: 5px;
     z-index: 0;
 }
 .hideHeaderMiddle .header__middle {
     display: none;
-    position: sticky;
   }
 .header__left {
     display: flex;
@@ -17,7 +15,7 @@
     align-items: center;
     padding-left: 10px;
     justify-content: space-evenly;
-
+    position: sticky;
 }
 .header__left > .MuiSvgIcon-root {
     font-size: 30px !important;
@@ -53,6 +51,7 @@
     align-items: center;
     justify-content: space-evenly;
     padding-right: 10px;
+    
 }
 .header__signUp {
     text-decoration: none !important;
