@@ -5,6 +5,7 @@ import Card from '../Components/Card'
 import feed from '../assets/feed.jpg'
 import deliver from '../assets/deliver.jpg'
 import cook from '../assets/cook.jpg'
+import Footer from './Footer'
 
 function Home() {
   return (
@@ -15,7 +16,8 @@ function Home() {
             <Card src={feed} title='Feed your employees' description='create your business account' />
             <Card src={cook} title='Your restaurant, delivered' description='Add your restaurant' />
             <Card src={deliver} title='Deliver with uber eats' description='Sign up to deliver' />
-        </div>
+        </div> <hr></hr>
+        <Footer />
     </div>
   )
 }
