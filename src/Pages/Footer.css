@@ -1,4 +1,63 @@
 .footer {
     display: flex;
-    margin-top: 40px;
+    flex-direction: column;
+    padding-top: 40px;
+    height: 400px;
+    
+}
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    
+}
+.footer__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 30vw;
+    height: 30vh;
+    margin-left: 10%;
+}
+.footer__left > img {
+    height: 30px;
+    padding-top: 40px;
+    margin-left: -17%;
+}
+.footer__leftBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer__leftBottom > img {
+    height: 40px;
+    margin-left: 20px;
+    padding-bottom: 30px;
+}
+.footer__right {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-left: 20%;
+    
+    margin-bottom: 20px;
+}
+.footer__rightList {
+    display: flex;
+    width: 500px;
+    
+}
+
+.list {
+    padding: 0;
+}
+  .listItem .MuiTypography-body1 {
+    line-height: 1;
+    font-size: 16px; /* Adjust the line height as needed */
+  }
+.footer__bottom {
+    margin: 0;
+
 }
