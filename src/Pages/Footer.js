@@ -13,7 +13,6 @@ function Footer() {
   // Creating array of list items, to populate the lis text
   const list1 = ['Get Help', 'Buy gift cards', 'Add your restaurant', 'Sign up to deliver', 'Create a business account', 'Promotions'];
   const list2 = ['Restaurants near me', 'View all cities', 'View all countries', 'Pick-up near me', 'About Uber Eats', 'English'];
-  const list3 = ['Privacy Policy', 'Terms', 'Pricing', 'Do not sell or share my personal information' ];
 
   let currentYear = new Date().getFullYear()
 
@@ -56,20 +55,17 @@ function Footer() {
           <InstagramIcon />
         </div>
         <div className="footer__bottomRight">
-        <List className='list'>
-           {list3.map((text, index) => (
-            <ListItem className='listItem' key={index}>
-               <ListItemText className='listItemText' primary={text} />
-            </ListItem>
-           ))}
-         </List>
+            <p>Privacy Policy</p>
+            <p>Terms</p>
+            <p>Pricing</p>
+            <p>Do not sell or share my personal information</p>
+        </div>
         </div>
         <div className="footer__bottomCopy">
          <p>
          This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
          </p>
          <p>&copy; {currentYear} Uber Technologies Inc.</p>
-        </div>
         </div>
     </div>
   )
