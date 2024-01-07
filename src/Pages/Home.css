@@ -3,3 +3,9 @@
     padding: 30px;
     margin-top: 47%;
   }
+  hr {
+    border: none;
+    color : rgb(226, 226, 226);
+    height: 1px;
+    border-top: 1px solid;
+  }
