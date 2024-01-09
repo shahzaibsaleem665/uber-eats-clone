@@ -17,8 +17,7 @@ const AddressSearch = () => {
       console.log('Selected Address:', selectedAddress);
       console.log('Coordinates:', latLng);
       setAddress(selectedAddress);
-
-      history.push('/feed');
+      history.push(`/feed?address=${encodeURIComponent(selectedAddress)}`);
 
     } catch (error) {
       console.error('Error:', error);

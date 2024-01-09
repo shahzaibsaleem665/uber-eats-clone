@@ -5,6 +5,7 @@ import WatchLaterIcon from '@mui/icons-material/WatchLater';
 import DateRangeIcon from '@mui/icons-material/DateRange';
 import { Button, ListItemIcon, ListItemText, MenuItem, Select } from '@mui/material';
 import Header from '../Pages/Header';
+import AddressSearch from './AddressSearch';
 
 function Banner() {
   const [selectedOption, setSelectedOption] = useState("deliver-now");
@@ -22,7 +23,7 @@ function Banner() {
       <div className="banner__containerSearchBox">
         <div className="banner__containerSearch">
           <FmdGoodIcon />
-          <input type='text' placeholder='Enter delivery address' /> 
+          <AddressSearch />
         </div>
         <div className="banner__containerSearchSelectButton">
           <Select className="select" value={selectedOption} onChange={handleSelectChange}>

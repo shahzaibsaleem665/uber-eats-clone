@@ -1,0 +1,27 @@
+/* CustomToggleButton.css */
+
+.toggleButtonGroup {
+    display: flex !important;
+    flex-direction: row !important; /* or 'column' for vertical alignment */
+    border-radius: 0 !important; /* No border-radius */
+    overflow: hidden !important; /* Hide overflow to remove any shadow */
+    background-color: lightgray !important;
+  }
+  
+  .toggleButton {
+    flex: 1 !important;
+    border: none !important; /* No border */
+    outline-width: none !important;
+    box-shadow: none !important; /* No box-shadow */
+    color: black !important; /* Text color */
+    background-color: whitesmoke !important; /* Background color */
+  }
+  
+  .toggleButton:hover {
+    background-color: whitesmoke !important; /* Hover background color */
+  }
+  
+  .toggleButton.Mui-selected {
+    background-color: green !important; /* Selected background color */
+  }
+  

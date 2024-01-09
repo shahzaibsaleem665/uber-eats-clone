@@ -22,6 +22,8 @@ function App() {
           <Feed />
         </Route>
 
+        
+
         {/* Home page is always the last one as it is prioritised.  */}
         <Route path='/'>
           <Home />
