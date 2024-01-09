@@ -13,11 +13,11 @@ function Toggle() {
     <div className='toggle'>
           <ToggleButtonGroup className='toggleButtonGroup'
         value={value}
-      exclusive
+        exclusive
       onChange={handleChange}
     >
       <ToggleButton className='toggleButton' value="delivery">Delivery</ToggleButton>
-      <ToggleButton value="pickup">Pickup</ToggleButton>
+      <ToggleButton className='toggleButton' value="pickup">Pickup</ToggleButton>
     </ToggleButtonGroup>
 
     </div>

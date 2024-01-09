@@ -2,6 +2,7 @@ import React from 'react'
 import './FeedHeader.css'
 import Navbar from '../Components/Navbar'
 import Toggle from '../Components/Toggle'
+import FeedAddress from '../Components/FeedAddress'
 function FeedHeader() {
 
     
@@ -13,6 +14,7 @@ function FeedHeader() {
         </div>
         <div className="feedHeader__middle">
         <Toggle />
+        <FeedAddress />
         </div>
     </div>
   )

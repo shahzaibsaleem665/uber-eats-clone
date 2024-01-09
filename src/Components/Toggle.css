@@ -1,27 +1,33 @@
-/* CustomToggleButton.css */
-
+.toggle {
+  display: flex;
+  background-color: white;
+}
 .toggleButtonGroup {
-    display: flex !important;
-    flex-direction: row !important; /* or 'column' for vertical alignment */
-    border-radius: 0 !important; /* No border-radius */
-    overflow: hidden !important; /* Hide overflow to remove any shadow */
-    background-color: lightgray !important;
-  }
-  
-  .toggleButton {
-    flex: 1 !important;
-    border: none !important; /* No border */
-    outline-width: none !important;
-    box-shadow: none !important; /* No box-shadow */
-    color: black !important; /* Text color */
-    background-color: whitesmoke !important; /* Background color */
-  }
-  
-  .toggleButton:hover {
-    background-color: whitesmoke !important; /* Hover background color */
-  }
-  
-  .toggleButton.Mui-selected {
-    background-color: green !important; /* Selected background color */
-  }
-  
+  background-color: #EEEEEE !important;
+  border-radius: 50px !important;
+  width: auto;
+  display: flex;
+}
+.toggleButton {
+  background-color: none !important;
+  margin: 5px !important;
+  border: none !important;
+  border-radius: 50px !important;
+  height: 40px;
+  width: auto;
+  font-size: 14px !important;
+  text-transform: capitalize !important;
+  font-weight: 600 !important;
+  color: black !important;
+}
+.toggleButton:hover {
+  cursor: pointer;
+  background-color: transparent !important;
+}
+.Mui-selected {
+  background-color: white !important;
+}
+.Mui-selected:hover {
+  cursor: pointer;
+  background-color: white !important;
+}
