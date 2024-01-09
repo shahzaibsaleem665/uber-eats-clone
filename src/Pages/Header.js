@@ -12,6 +12,7 @@ import AppleIcon from '@mui/icons-material/Apple';
 import AdbIcon from '@mui/icons-material/Adb';
 import main_logo from '../assets/main_logo.png'
 import { Link } from 'react-router-dom';
+import AddressSearch from '../Components/AddressSearch';
 
 function Header() { 
      const [open, setOpen] = useState(false);
@@ -89,7 +90,7 @@ function Header() {
         </div>
         <div className="header__middle">
             <FmdGoodIcon />
-            <input type='text' placeholder='Enter delivery address' />
+            <AddressSearch />
         </div>
         <div className="header__right">
           <Link to='/login'>

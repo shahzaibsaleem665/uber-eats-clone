@@ -1,0 +1,44 @@
+.inputField > input {
+    border: none;
+    width: 550px;
+    background-color: transparent;
+    outline-width: 0;
+    padding: 10px;
+    font-size: medium;
+    height: fit-content;
+  }
+  .autocomplete-dropdown-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 5px;
+    z-index: 1000;
+    max-height: 200px; /* You can adjust the max-height based on your design */
+    overflow-y: hidden;
+    margin-left: 26%;
+
+  }
+  
+  .suggestion-item {
+    padding: 10px;
+    width: 550px;
+    cursor: pointer;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  
+  .suggestion-item--active {
+    background-color: #f1f1f1;
+
+    padding: 10px;
+    width: 550px;
+    cursor: pointer;
+    border-bottom: 1px solid #dcdcdc;
+  }
+  
+  .loading-message {
+    padding: 10px;
+  }
+  

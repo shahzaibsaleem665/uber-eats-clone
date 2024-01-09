@@ -15,7 +15,9 @@ function SignUp() {
       </div>
       <div className="signUp__content">
         <h2>What's your phone number or email?</h2>
+        <form>
         <input type='text' placeholder='Enter phone number or email' required autoFocus />
+        </form>
         <Button type='submit' className='continue__button'>Continue</Button>
       </div> 
       <div className="signUp__content">
@@ -28,7 +30,7 @@ function SignUp() {
       <Divider className='divider' variant='middle'>or</Divider>
       <Button type='button' className='qr__button'><img src={qr}/>Login with QR code</Button>
       <p>By proceeding, you consent to get calls, WhatsApp or SMS messages, including by automated means, from Uber and its affiliates to the number provided.</p>
-      <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+      <p>This site is protected by reCAPTCHA and the Google <a href='https://policies.google.com/privacy'>Privacy Policy</a> and <a href='https://policies.google.com/privacy'>Terms of Service</a> apply.</p>
       </div>
       
     </div>
