@@ -30,6 +30,8 @@
 .header__left > p {
     font-size: 32px;
     font-weight: 500;
+    color: black;
+    padding: 0px;
 }
 .header__middle {
     display: flex;
@@ -152,16 +154,16 @@ font-size: 14px;
     height: 50px;
 }
 
-.navbar__bottomButtons > Button{
+.apple__store{
     color: black !important;
-    background-color: #e2e2e2;
-    border-radius: 20px;
-    text-transform: capitalize;
-    font-weight: 500;
-    margin: 10px;
+    background-color: #e2e2e2 !important;
+    border-radius: 20px !important;
+    text-transform: capitalize !important;
+    font-weight: 500 !important;
+    margin: 10px !important;
     
 }
-.navbar__bottomButtons > Button:hover {
+ .apple__store:hover {
 cursor: pointer;
 background-color: #d1cece;
 }

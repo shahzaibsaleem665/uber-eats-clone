@@ -23,8 +23,9 @@ function Footer() {
         <div className="footer__left">
             <img src={u_eats} />
             <div className="footer__leftBottom">
-                <img src={app_store} />
-                <img src={play_store} />
+            <a  href='https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277'><img src={app_store} />
+            </a>
+            <a href='https://play.google.com/store/apps/details?id=com.ubercab.eats&pli=1'><img src={play_store} /> </a>
             </div>
          </div>
          <div className="footer__right">

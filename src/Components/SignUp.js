@@ -15,7 +15,7 @@ function SignUp() {
       </div>
       <div className="signUp__content">
         <h2>What's your phone number or email?</h2>
-        <input type='text' placeholder='Enter phone number or email' required />
+        <input type='text' placeholder='Enter phone number or email' required autoFocus />
         <Button type='submit' className='continue__button'>Continue</Button>
       </div> 
       <div className="signUp__content">

@@ -11,12 +11,12 @@ import {
 import AppleIcon from '@mui/icons-material/Apple';
 import AdbIcon from '@mui/icons-material/Adb';
 import main_logo from '../assets/main_logo.png'
+import { Link } from 'react-router-dom';
 
 function Header() { 
      const [open, setOpen] = useState(false);
      const [hideHeaderMiddle, setHideHeaderMiddle] = useState(true);
      
-   
      const handleScroll = () => {
        if (window.scrollY >40) {
          setHideHeaderMiddle(false);
@@ -42,10 +42,14 @@ function Header() {
       <div style={{ width: 280 }} onClick={() => setOpen(false)} className='navbar'>
         <div className='navbar__top'>
           <ListItem>
+            <Link to='/register'>
           <Button className='listItem__register'>Sign up</Button>
+          </Link>
           </ListItem>
           <ListItem>
+            <Link to='/login'>
           <Button className='listItem__login'>Log in</Button>
+            </Link>
           </ListItem>
           <div className="navbar__links">
             <ListItem>
@@ -65,8 +69,12 @@ function Header() {
               <p>There's more to love in the app.</p>
             </ListItem>
             <ListItem className='navbar__bottomButtons'>
-              <Button><AppleIcon /> Iphone</Button>
-              <Button><AdbIcon />Android</Button>
+              <a  href='https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277'>
+              <Button className='apple__store'><AppleIcon /> Iphone</Button>
+              </a>
+              <a href='https://play.google.com/store/apps/details?id=com.ubercab.eats&pli=1'>
+              <Button className='apple__store'><AdbIcon />Android</Button>
+              </a>
             </ListItem>
 
           </div>
@@ -84,8 +92,12 @@ function Header() {
             <input type='text' placeholder='Enter delivery address' />
         </div>
         <div className="header__right">
+          <Link to='/login'>
             <Button className='header__signIn'> <PersonIcon />Log in</Button>
+            </Link>
+            <Link to='/register'>
             <Button className='header__signUp' >Sign up</Button>
+            </Link>
         </div>
 
 

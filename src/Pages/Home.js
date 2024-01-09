@@ -9,6 +9,7 @@ import Footer from './Footer'
 import Header from '../Pages/Header';
 
 function Home() {
+
   return (
     <div className='home'>
               <Header />

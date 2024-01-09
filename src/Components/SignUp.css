@@ -10,7 +10,7 @@
     top: 0;
     border-bottom: 1px solid lightgray;
     position: relative;
-    background-color: whitesmoke;
+    background-color: lightblue;
 }
 .signUp__header > img {
     margin-left: 50px;
@@ -26,18 +26,18 @@
     margin-left: 35%;
     padding: 15px;
     padding-top: 0px;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
 
 }
 .signUp__content > h2 {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
+    font-weight: 400;
+    margin-top: 20px;
 }
 .signUp__content > input {
     width: 100%;
-    height: 50px;
+    height: 45px;
     margin-top: 20px;
     outline: none;
     border: none;
@@ -48,6 +48,9 @@
 }
 .signUp__content > input::placeholder {
     font-size: 16px;
+}
+.signUp__content  > input:focus {
+    border: 2px solid black;
 }
 .signUp__content > .continue__button {
     background-color: black !important;
@@ -66,7 +69,7 @@
     width: 100%;
     justify-content: center;
     margin-left: 20px !important;
-    color: lightgray;
+    color: gray;
 }
 .signUp__content > Button {
     background-color: whitesmoke;
@@ -92,7 +95,7 @@ margin-top: 10px;
 .signUp__content > .qr__button:hover {
     background-color: whitesmoke;
 }
-p {
+.signUp__content > p {
     font-size: 12px;
     padding-top: 15px;
     color: gray;
