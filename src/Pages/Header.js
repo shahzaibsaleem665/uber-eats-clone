@@ -15,6 +15,7 @@ import main_logo from '../assets/main_logo.png'
 function Header() { 
      const [open, setOpen] = useState(false);
      const [hideHeaderMiddle, setHideHeaderMiddle] = useState(true);
+     
    
      const handleScroll = () => {
        if (window.scrollY >40) {
@@ -84,7 +85,7 @@ function Header() {
         </div>
         <div className="header__right">
             <Button className='header__signIn'> <PersonIcon />Log in</Button>
-            <Button className='header__signUp'>Sign up</Button>
+            <Button className='header__signUp' >Sign up</Button>
         </div>
 
 

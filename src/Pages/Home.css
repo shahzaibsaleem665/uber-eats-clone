@@ -1,7 +1,12 @@
+.home {
+  z-index: -1;
+}
 .home__section {
     display: flex;
     padding: 30px;
     margin-top: 47%;
+    z-index: -1;
+
   }
   hr {
     border: none;

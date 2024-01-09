@@ -50,7 +50,7 @@
 }
 
 .listItem .MuiTypography-body1 {
-  line-height: 1; /* Adjust the line height as needed */
+  line-height: 1;
 }
 
 .listItemText {
@@ -63,7 +63,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  box-sizing: border-box; /* Add box-sizing to include padding in the width */
+  box-sizing: border-box; 
 }
 
 .footer__bottomLeft {
@@ -77,7 +77,7 @@
   display: flex;
   flex-direction: row;
   text-align: center;
-  max-width: 700px; /* Change width to max-width */
+  max-width: 700px;
   margin-right: 16.4%;
 }
 

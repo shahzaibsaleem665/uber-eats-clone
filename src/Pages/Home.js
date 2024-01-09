@@ -6,12 +6,13 @@ import feed from '../assets/feed.jpg'
 import deliver from '../assets/deliver.jpg'
 import cook from '../assets/cook.jpg'
 import Footer from './Footer'
+import Header from '../Pages/Header';
 
 function Home() {
   return (
     <div className='home'>
+              <Header />
         <Banner />
-
         <div className="home__section">
             <Card src={feed} title='Feed your employees' description='create your business account' />
             <Card src={cook} title='Your restaurant, delivered' description='Add your restaurant' />
