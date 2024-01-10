@@ -1,0 +1,4 @@
+.feed__content{
+    z-index: 1;
+    display: flex;
+}

@@ -7,7 +7,7 @@
 .feedAddress__text {
     align-items: center;
     width: auto;
-    
+    cursor: pointer;
 }
 .feedAddress__text > p {
     display: flex;

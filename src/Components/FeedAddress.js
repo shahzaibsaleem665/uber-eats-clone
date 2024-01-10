@@ -9,7 +9,7 @@ function FeedAddress() {
   let trimmedAddress = selectedAddress ? selectedAddress.split(',')[0] : '';
 
   if (trimmedAddress.length > 20) {
-    trimmedAddress = trimmedAddress.substring(0, 20);
+    trimmedAddress = trimmedAddress.substring(0, 19);
   }
 
   console.log(trimmedAddress);

@@ -1,0 +1,23 @@
+.choiceSlide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.choiceSlide__container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choiceSlide__container > img {
+    height: 70px;
+    margin-top: 10px;
+}
+.choiceSlide__container > p {
+    font-size: 12px;
+    font-weight: 500;
+}
+.choiceSlide__container >img:hover, p:hover {
+    cursor: pointer;
+}

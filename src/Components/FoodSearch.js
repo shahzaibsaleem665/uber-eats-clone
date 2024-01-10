@@ -1,9 +1,14 @@
 import React from 'react'
+import './FoodSearch.css'
+import { Search } from '@mui/icons-material'
 
 function FoodSearch() {
   return (
     <div className='foodSearch'>
-        <h1>I am food</h1>
+        <form>
+          <Search />
+          <input type='text' placeholder='Food, groceries, drinks, etc ' />
+        </form>
     </div>
   )
 }
