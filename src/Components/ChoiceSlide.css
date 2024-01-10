@@ -6,6 +6,8 @@
 }
 .choiceSlide__container{
     padding: 10px;
+    padding-top: 0px;
+    margin-left: 2px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,4 +22,11 @@
 }
 .choiceSlide__container >img:hover, p:hover {
     cursor: pointer;
+}
+.choiceSlide__container.selected > img{
+    background-color: #ffe3ac;
+    border-radius: 100px; /* Set your desired background color */
+}
+.choiceSlide__container img.rotate {
+    transform: rotate(45deg) !important;
 }

@@ -1,0 +1,21 @@
+.filter {
+    display: flex;
+    align-items: center;
+    font-size: 14px !important;
+}
+.filter > Button {
+    color: black;
+    background-color: #EEEEEE;
+    margin: 5px;
+    text-transform: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: fit-content;
+    height: 40px;
+    border-radius: 50px;
+}
+.filter > button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
