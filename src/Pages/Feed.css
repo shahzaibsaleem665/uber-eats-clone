@@ -8,3 +8,13 @@
     display: flex;
     margin-left: 35px;
 }
+
+.material-ui-icon {
+    /* Add your common styles here */
+  font-size: large !important;
+    margin: 2px !important;
+
+}
+.filter__text {
+    margin-left: 2px !important;
+}

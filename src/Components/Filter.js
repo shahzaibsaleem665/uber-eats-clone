@@ -4,10 +4,10 @@ import { Button } from '@mui/material'
 
 
 
-function Filter({icon, text, secondIcon}) {
+function Filter({icon, text, secondIcon, iconStyle, secondIconStyle}) {
   return (
     <div className='filter'>
-        <Button startIcon={icon} endIcon={secondIcon} className='iconClassName'>{text}</Button>
+        <Button startIcon={icon} style={iconStyle} endIcon={secondIcon} className='iconClassName'>{text}</Button>
     </div>
   )
 }

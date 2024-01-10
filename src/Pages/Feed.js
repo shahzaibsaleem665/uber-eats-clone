@@ -57,14 +57,14 @@ function Feed() {
 
 
         <div className="feed__contentFilter"> 
-        <Filter  secondIcon={<KeyboardArrowDownIcon />} text='Delivery fee' />
-        <Filter icon={<LocalOfferIcon />} text='Offers'/>
-        <Filter icon={<StarBorderPurple500Icon />} text='Rating' secondIcon={<KeyboardArrowDownIcon />}/>
-        <Filter text='Under 30 minutes'/>
-        <Filter secondIcon={<KeyboardArrowDownIcon />} text='Price'/>
-        <Filter icon={<WorkspacePremiumIcon />} text='Highest rated'/>
-        <Filter secondIcon={<KeyboardArrowDownIcon />} text='Dietry'/>
-        <Filter secondIcon={<KeyboardArrowDownIcon />} text='Sort' />
+        <Filter  secondIcon={<KeyboardArrowDownIcon className='material-ui-icon' />} textClassName="filter-text" text='Delivery fee'  />
+        <Filter icon={<LocalOfferIcon className='material-ui-icon' />} text='Offers' textClassName="filter-text" />
+        <Filter icon={<StarBorderPurple500Icon className='material-ui-icon' />}  textClassName="filter-text" text='Rating' secondIcon={<KeyboardArrowDownIcon  className='material-ui-icon'/>}/>
+        <Filter textClassName="filter-text"  text='Under 30 minutes'/>
+        <Filter secondIcon={<KeyboardArrowDownIcon  className='material-ui-icon'/>} textClassName="filter-text"  text='Price'/>
+        <Filter icon={<WorkspacePremiumIcon  className='material-ui-icon'/>} textClassName="filter-text"  text='Highest rated'/>
+        <Filter secondIcon={<KeyboardArrowDownIcon className='material-ui-icon' />} textClassName="filter-text"  text='Dietry'/>
+        <Filter secondIcon={<KeyboardArrowDownIcon className='material-ui-icon' />} textClassName="filter-text"  text='Sort' />
         </div>
         <div className="feed__footer">
           <Footer />
