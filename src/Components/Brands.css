@@ -1,0 +1,44 @@
+.brands  {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+   
+}
+.brands__card {
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+
+}
+.brands__card > img {
+    height: 140px;
+    width: 280px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+.brands__card > .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+.brands__card > .text > h4 {
+    font-size: 28px;
+    font-family: poppins;
+    font-weight: 400;
+}
+.brands__card > .text > p {
+    border-radius: 30px;
+    padding: 5px;
+    background-color: #EEEEEE;
+    cursor: pointer;
+    font-size: 12px;
+}
+.brands__card >p {
+    color: gray;
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5px;
+}

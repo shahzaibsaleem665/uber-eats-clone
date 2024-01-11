@@ -21,7 +21,10 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer';
 import StarBorderPurple500Icon from '@mui/icons-material/StarBorderPurple500';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import megaphone from '../assets/megaphone.png'
+import Brands from '../Components/Brands.js';
 
+import GYG from '../assets/Brands/GYG.jpeg'
 function Feed() {
   const [selectedItem, setSelectedItem] = useState(null);
   
@@ -65,6 +68,23 @@ function Feed() {
         <Filter icon={<WorkspacePremiumIcon  className='material-ui-icon'/>} textClassName="filter-text"  text='Highest rated'/>
         <Filter secondIcon={<KeyboardArrowDownIcon className='material-ui-icon' />} textClassName="filter-text"  text='Dietry'/>
         <Filter secondIcon={<KeyboardArrowDownIcon className='material-ui-icon' />} textClassName="filter-text"  text='Sort' />
+        </div>
+        <div className="feed__contentBrands">
+          <div className="feed__contentBrandsHeader">
+            <img src={megaphone} />
+            <div className="text">
+              <h1>Additional fees may apply</h1>
+              <p>How do fees work?</p>
+            </div>
+          </div>
+          <h2>National brands</h2>
+          <div className="feed__contentBrandsDetails">
+          <Brands  image={GYG} title='Guzman y Gomez' rating={4.5} time='15-20 mins' /> 
+          <Brands  image={GYG} title='Guzman y Gomez' rating={4.5} time='15-20 mins' /> 
+          <Brands  image={GYG} title='Guzman y Gomez' rating={4.5} time='15-20 mins' /> 
+          <Brands  image={GYG} title='Guzman y Gomez' rating={4.5} time='15-20 mins' /> 
+          </div>
+          <hr></hr>
         </div>
         <div className="feed__footer">
           <Footer />
