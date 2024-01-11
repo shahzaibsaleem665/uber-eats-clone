@@ -23,7 +23,9 @@ import StarBorderPurple500Icon from '@mui/icons-material/StarBorderPurple500';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import megaphone from '../assets/megaphone.png'
 import Brands from '../Components/Brands.js';
-
+import KFC from '../assets/Brands/KFC.jpeg'
+import BroasterChicken from '../assets/Brands/BroasterChicken.jpeg'
+import Mcdonalds from '../assets/Brands/Mcdonalds.jpeg'
 import GYG from '../assets/Brands/GYG.jpeg'
 function Feed() {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -32,7 +34,7 @@ function Feed() {
   const handleSlideClick = (image) => {
     setSelectedItem(image === selectedItem ? null : image);
   };
- 
+  
   
   useEffect (() => {
     document.title = 'Order food online | Food delivery app | Uber Eats';
@@ -80,12 +82,23 @@ function Feed() {
           <h2>National brands</h2>
           <div className="feed__contentBrandsDetails">
           <Brands  image={GYG} title='Guzman y Gomez' rating={4.5} time='15-20 mins' /> 
-          <Brands  image={GYG} title='Guzman y Gomez' rating={4.5} time='15-20 mins' /> 
-          <Brands  image={GYG} title='Guzman y Gomez' rating={4.5} time='15-20 mins' /> 
-          <Brands  image={GYG} title='Guzman y Gomez' rating={4.5} time='15-20 mins' /> 
+          <Brands  image={Mcdonalds} title='Mcdonalds (Sydney)' rating={4.5} time='15-20 mins' /> 
+          <Brands  image={KFC} title='KFC (Sydney)' rating={4.7} time='15-20 mins' /> 
+          <Brands  image={BroasterChicken} title='Broaster Chicken (Sydney)' rating={4.9} time='15-20 mins' /> 
           </div>
           <hr></hr>
         </div>
+        <div className="feed__contentBrands">
+          <h2>Healthy Options to explore</h2>
+          <div className="feed__contentBrandsDetails">
+          <Brands  image={GYG} title='Guzman y Gomez' rating={4.5} time='15-20 mins' /> 
+          <Brands  image={Mcdonalds} title='Mcdonalds (Sydney)' rating={4.5} time='15-20 mins' /> 
+          <Brands  image={KFC} title='KFC (Sydney)' rating={4.7} time='15-20 mins' /> 
+          <Brands  image={BroasterChicken} title='Broaster Chicken (Sydney)' rating={4.9} time='15-20 mins' /> 
+          </div>
+          <hr></hr>
+        </div>
+        
         <div className="feed__footer">
           <Footer />
         </div>

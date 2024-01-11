@@ -7,13 +7,13 @@
 .brands__card {
     display: flex;
     flex-direction: column;
-
+    max-width: 280px;
     text-align: left;
 
 }
 .brands__card > img {
     height: 140px;
-    width: 280px;
+    min-width: 280px;
     border-radius: 10px;
     border: 1px solid lightgray;
 }
@@ -25,9 +25,13 @@
     
 }
 .brands__card > .text > h4 {
-    font-size: 28px;
+    font-size: 20px;
     font-family: poppins;
-    font-weight: 400;
+    font-weight: bold;
+    text-wrap: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 240px;
 }
 .brands__card > .text > p {
     border-radius: 30px;
@@ -40,5 +44,5 @@
     color: gray;
     font-size: 14px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-top: 5px;
+
 }
