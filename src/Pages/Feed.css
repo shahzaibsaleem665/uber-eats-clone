@@ -30,6 +30,7 @@
 .feed__contentBrands > h2 {
     margin-left: 40px;
     padding-top: 15px;
+    font-family: poppins;
 }
 .feed__contentBrandsHeader {
     display: flex;
@@ -59,11 +60,13 @@
 .feed__contentBrandsDetails {
     display: flex;
     align-items: center;
+    margin-top: 15px;
     margin-left: 30px;
     overflow: hidden;
 }
 .feed__contentBrands > hr {
     width: 93%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }

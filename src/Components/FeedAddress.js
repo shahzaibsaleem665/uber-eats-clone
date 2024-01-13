@@ -12,7 +12,6 @@ function FeedAddress() {
     trimmedAddress = trimmedAddress.substring(0, 19);
   }
 
-  console.log(trimmedAddress);
   return (
     <div className='feedAddress'>
       <div className="feedAddress__text">

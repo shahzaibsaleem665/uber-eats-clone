@@ -1,0 +1,70 @@
+
+.userNavbar {
+    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+}
+.navbar__top {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    align-items: left;
+}
+.navbar__topLeft {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: red;
+}
+.navbar__topRight {
+    align-items: center;
+    justify-content: left;
+}
+.navbar__links p{
+font-weight: 500;
+cursor: pointer;
+font-size: 14px;
+}
+.navbar__bottom {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    margin-top: 10%;
+    justify-content: center;
+}
+.navbar__bottomList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: -70px;
+}
+.navbar__bottomIconList > p{
+    width: auto;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    padding-left: 20px;
+}
+.navbar__bottomIconList > img {
+    height: 50px;
+}
+
+.apple__store{
+    color: black !important;
+    background-color: #e2e2e2 !important;
+    border-radius: 20px !important;
+    text-transform: capitalize !important;
+    font-weight: 500 !important;
+    margin: 10px !important;
+    
+}
+ .apple__store:hover {
+cursor: pointer;
+background-color: #d1cece;
+}
+ .MuiSvgIcon-root {
+    font-size: 30px !important;
+    cursor: pointer;
+}

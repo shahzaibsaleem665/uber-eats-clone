@@ -6,6 +6,7 @@ import Register from './Pages/Register';
 import Login from "./Pages/Login";
 import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
 import Feed from "./Pages/Feed";
+import UserHeader from "./Pages/UserHeader";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path='/feed'>
           <Feed />
+        </Route>
+        <Route path='/user'>
+        <UserHeader />
         </Route>
        
 

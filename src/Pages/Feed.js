@@ -27,25 +27,52 @@ import KFC from '../assets/Brands/KFC.jpeg'
 import BroasterChicken from '../assets/Brands/BroasterChicken.jpeg'
 import Mcdonalds from '../assets/Brands/Mcdonalds.jpeg'
 import GYG from '../assets/Brands/GYG.jpeg'
+import BP from '../assets/Brands/BP.jpeg'
+import Crust from '../assets/Brands/Crust.jpeg'
+import EJ from '../assets/Brands/EJ.jpeg'
+import IJuice from '../assets/Brands/IJuice.jpeg'
+import Olivers from '../assets/Brands/Olivers.jpeg'
+import Snacks from '../assets/Brands/Snacks.jpeg'
+import SubWay from '../assets/Brands/SubWay.jpeg'
+
+
 function Feed() {
   const [selectedItem, setSelectedItem] = useState(null);
-  
 
-  const handleSlideClick = (image) => {
-    setSelectedItem(image === selectedItem ? null : image);
-  };
-  
-  
   useEffect (() => {
+    
     document.title = 'Order food online | Food delivery app | Uber Eats';
   })
+  const nationalBrands = [
+    { image: GYG, title: 'Guzman y Gomez', rating: 4.5, time: '15-20 mins' },
+    { image: Mcdonalds, title: 'Mcdonalds (Sydney)', rating: 4.5, time: '15-20 mins' },
+    { image: KFC, title: 'KFC (Sydney)', rating: 4.7, time: '15-20 mins' },
+    { image: BroasterChicken, title: 'Broaster Chicken (Sydney)', rating: 4.9, time: '15-20 mins' },
+  ];
+  const healthy = [
+    { image: EJ, title: 'El Jannah (Granville)', rating: 4.9, time: '30-40 mins' },
+    { image: SubWay, title: 'Subway (Sydney)', rating: 4.1, time: '25-35 mins' },
+    { image: IJuice, title: 'IJuice (Green Acre)', rating: 4.8, time: '25-50 mins' },
+    { image: Olivers, title: 'Olivers (Sydney)', rating: 4.4, time: '10-3 0 mins' },
+  ];
 
-  
-  return (
-    <div className='feed'>
-        <FeedHeader />
-        <div className="feed__content">
-        <ChoiceSlide image={Grocery} title='Grocery' isSelected={selectedItem === Grocery} onSlideClick={handleSlideClick} />
+  const renderBrands = (brandData, headerText) => {
+    return (
+      <div className="feed__contentBrands">
+        <h2>{headerText}</h2>
+        <div className="feed__contentBrandsDetails">
+          {brandData.map((brand, index) => (
+            <Brands key={index} {...brand} />
+          ))}
+        </div>
+        <hr />
+      </div>
+    );
+  };
+  const choiceSlides = () => {
+ return (
+        <div className='feed__content'>
+          <ChoiceSlide image={Grocery} title='Grocery' isSelected={selectedItem === Grocery} onSlideClick={handleSlideClick} />
         <ChoiceSlide image={Sushi} title='Sushi' isSelected={selectedItem === Sushi} onSlideClick={handleSlideClick} />
         <ChoiceSlide image={Pizza} title='Pizza' isSelected={selectedItem === Pizza} onSlideClick={handleSlideClick} />
         <ChoiceSlide image={Thai} title='Thai' isSelected={selectedItem === Thai} onSlideClick={handleSlideClick} />
@@ -59,46 +86,45 @@ function Feed() {
         <ChoiceSlide image={Sandwich} title='Sandwich' isSelected={selectedItem === Sandwich} onSlideClick={handleSlideClick} />
         <ChoiceSlide image={American} title='American' isSelected={selectedItem === American} onSlideClick={handleSlideClick} />
         </div>
+ )};
 
+ const filters = () => {
+  return (
+    <div className="feed__contentFilter"> 
+    <Filter  secondIcon={<KeyboardArrowDownIcon className='material-ui-icon' />} textClassName="filter-text" text='Delivery fee'  />
+    <Filter icon={<LocalOfferIcon className='material-ui-icon' />} text='Offers' textClassName="filter-text" />
+    <Filter icon={<StarBorderPurple500Icon className='material-ui-icon' />}  textClassName="filter-text" text='Rating' secondIcon={<KeyboardArrowDownIcon  className='material-ui-icon'/>}/>
+    <Filter textClassName="filter-text"  text='Under 30 minutes'/>
+    <Filter secondIcon={<KeyboardArrowDownIcon  className='material-ui-icon'/>} textClassName="filter-text"  text='Price'/>
+    <Filter icon={<WorkspacePremiumIcon  className='material-ui-icon'/>} textClassName="filter-text"  text='Highest rated'/>
+    <Filter secondIcon={<KeyboardArrowDownIcon className='material-ui-icon' />} textClassName="filter-text"  text='Dietry'/>
+    <Filter secondIcon={<KeyboardArrowDownIcon className='material-ui-icon' />} textClassName="filter-text"  text='Sort' />
+    </div>
+  )
+ }
 
-        <div className="feed__contentFilter"> 
-        <Filter  secondIcon={<KeyboardArrowDownIcon className='material-ui-icon' />} textClassName="filter-text" text='Delivery fee'  />
-        <Filter icon={<LocalOfferIcon className='material-ui-icon' />} text='Offers' textClassName="filter-text" />
-        <Filter icon={<StarBorderPurple500Icon className='material-ui-icon' />}  textClassName="filter-text" text='Rating' secondIcon={<KeyboardArrowDownIcon  className='material-ui-icon'/>}/>
-        <Filter textClassName="filter-text"  text='Under 30 minutes'/>
-        <Filter secondIcon={<KeyboardArrowDownIcon  className='material-ui-icon'/>} textClassName="filter-text"  text='Price'/>
-        <Filter icon={<WorkspacePremiumIcon  className='material-ui-icon'/>} textClassName="filter-text"  text='Highest rated'/>
-        <Filter secondIcon={<KeyboardArrowDownIcon className='material-ui-icon' />} textClassName="filter-text"  text='Dietry'/>
-        <Filter secondIcon={<KeyboardArrowDownIcon className='material-ui-icon' />} textClassName="filter-text"  text='Sort' />
-        </div>
+  const handleSlideClick = (image) => {
+    setSelectedItem(image === selectedItem ? null : image);
+  };
+  
+
+  
+  return (
+    <div className='feed'>
+        <FeedHeader />
+        {choiceSlides()}
+        {filters()}
         <div className="feed__contentBrands">
-          <div className="feed__contentBrandsHeader">
-            <img src={megaphone} />
-            <div className="text">
-              <h1>Additional fees may apply</h1>
-              <p>How do fees work?</p>
-            </div>
+        <div className="feed__contentBrandsHeader">
+          <img src={megaphone} alt="Megaphone" />
+          <div className="text">
+            <h1>Additional fees may apply</h1>
+            <p>How do fees work?</p>
           </div>
-          <h2>National brands</h2>
-          <div className="feed__contentBrandsDetails">
-          <Brands  image={GYG} title='Guzman y Gomez' rating={4.5} time='15-20 mins' /> 
-          <Brands  image={Mcdonalds} title='Mcdonalds (Sydney)' rating={4.5} time='15-20 mins' /> 
-          <Brands  image={KFC} title='KFC (Sydney)' rating={4.7} time='15-20 mins' /> 
-          <Brands  image={BroasterChicken} title='Broaster Chicken (Sydney)' rating={4.9} time='15-20 mins' /> 
-          </div>
-          <hr></hr>
         </div>
-        <div className="feed__contentBrands">
-          <h2>Healthy Options to explore</h2>
-          <div className="feed__contentBrandsDetails">
-          <Brands  image={GYG} title='Guzman y Gomez' rating={4.5} time='15-20 mins' /> 
-          <Brands  image={Mcdonalds} title='Mcdonalds (Sydney)' rating={4.5} time='15-20 mins' /> 
-          <Brands  image={KFC} title='KFC (Sydney)' rating={4.7} time='15-20 mins' /> 
-          <Brands  image={BroasterChicken} title='Broaster Chicken (Sydney)' rating={4.9} time='15-20 mins' /> 
-          </div>
-          <hr></hr>
+        {renderBrands(nationalBrands, 'National brands')}
+      {renderBrands(healthy, 'Healthy Options to explore')}
         </div>
-        
         <div className="feed__footer">
           <Footer />
         </div>

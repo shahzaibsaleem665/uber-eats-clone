@@ -1,0 +1,71 @@
+.userHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 0px;
+    z-index: 1000; /* Ensure a higher z-index */
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+    transition:background-color 0.3s;
+    height: 50px;
+    background-color: white;
+}
+.userHeader__left {
+    display: flex;
+    width: 18%;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: space-evenly;
+}
+.userHeader__left > p {
+    font-size: 32px;
+    font-weight: 500;
+    color: black;
+    padding: 0px;
+}
+.userHeader__middle {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    justify-content: left;
+    border-radius: 5px;
+    height: auto;
+}
+.userHeader__right {
+    display: flex;
+    padding-right: 20px;
+    width: 600px;
+    align-items: center;
+}
+.userHeader__rightSearch { 
+    margin-right: 50px;
+    width: 500px;
+}
+.userHeader__rightSearch > .search {
+    width: 500px !important;
+}
+.userHeader__rightButton > Button {
+    border-radius: 50px;
+    color: black;
+    background-color: #EEEEEE;
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 600;
+    padding: 10px;
+
+}
+.userHeader__rightButton > Button > .MuiSvgIcon-root {
+    font-size: x-large !important;
+    padding: 5px;
+}
+.userHeader__rightButton > .button__cart {
+    background-color: black !important;
+    color: white;
+}
+.userHeader__rightButton > Button:hover {
+    background-color: rgb(196, 196, 196);
+}

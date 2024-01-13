@@ -23,7 +23,7 @@ const history = useHistory();
         </div>
         <div className="feedHeader__right">
           <div className="feedHeader__rightSearch">
-          <FoodSearch />
+          <FoodSearch  />
           </div>
         <div className="feedHeader__rightButton">
         <Button className='button__cart'><ShoppingCartIcon/>Cart.0</Button>
