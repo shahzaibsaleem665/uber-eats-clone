@@ -19,69 +19,67 @@ import {
 } from '@mui/material';
 import { Link } from 'react-router-dom';
 function UserNavbar() {
-
     const [open, setOpen] = useState(false);
+
+    const signOut = () => {
+
+    }
 
 
     const getList = () => (
-        <div style={{ width: 280 }} onClick={() => setOpen(false)} className='navbar'>
+        <div style={{ width: 270 }} onClick={() => setOpen(false)} className='userNavbar'>
           <div className='navbar__top'>
-            <div className="navbar__topLeft">
-            <ListItem>
-              <Avatar />
-            </ListItem>
+            <div className="userNavbar__topUser">
+              <Avatar className='avatar'/>
             <div className="navbar__topRight">
-            <ListItem id='list'>
               <p>Name</p>
-              <p>Manage Account</p>
-            </ListItem>
+              <p className='manage__account'>
+              Manage account</p>
             </div>
             </div>
             <div className="navbar__links">
-              <ListItem>
+              <ListItem className='icon'>
               <FeaturedPlayListIcon />
                 <p>Orders</p>
               </ListItem>
-              <ListItem>
+              <ListItem className='icon'>
               <FavoriteIcon />
                 <p>Favourites</p>
               </ListItem>
-              <ListItem>
+              <ListItem className='icon'>
               <WalletIcon />
                 <p>Wallet</p>
               </ListItem>
-              <ListItem>
+              <ListItem className='icon'>
               <WorkIcon />
                 <p>Meal Plan</p>
               </ListItem>
-              <ListItem>
+              <ListItem className='icon'>
               <AssistantIcon />
                 <p>Help</p>
               </ListItem>
-              <ListItem>
+              <ListItem className='icon'>
               <LocalOfferIcon />
                 <p>Promotions</p>
               </ListItem>
-              <ListItem>
+              <ListItem className='icon'>
               <CardGiftcardIcon />
                 <p>Invite friends</p>
-              </ListItem>
-              <ListItem>
-                <p>Sign out</p>
-              </ListItem>
+              </ListItem >
+              <p className='signout'>Sign out</p>
             </div>
             <hr></hr>
             </div>
             <div className="navbar__bottom">
                 <div className="navbar__bottomList">
-                    <ListItem>
+                    <ListItem className='text'>
                         <p>Create business with uber</p>
                     </ListItem>
-                    <ListItem>
+                    <ListItem className='text'>
                         <p>Add your restaurant</p>
                     </ListItem>
-                    <ListItem>
-                        <p>Sign up to deliver</p>
+                    <ListItem className='text'>
+                        <p onClick={signOut}>Sign up to deliver</p>
                     </ListItem>
                 </div>
             <ListItem className='navbar__bottomIconList'>
@@ -90,7 +88,7 @@ function UserNavbar() {
               </ListItem>
               <ListItem className='navbar__bottomButtons'>
                 <a  href='https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277'>
-                <Button className='apple__store'><AppleIcon /> Iphone</Button>
+                <Button className='apple__store'><AppleIcon /> iphone</Button>
                 </a>
                 <a href='https://play.google.com/store/apps/details?id=com.ubercab.eats&pli=1'>
                 <Button className='apple__store'><AdbIcon />Android</Button>

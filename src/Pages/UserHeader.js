@@ -18,6 +18,7 @@ function UserHeader() {
             <p>Uber <strong>Eats</strong></p>
         </div>
         <div className="userHeader__middle">
+        <Toggle />
         <FeedAddress />
         </div>
         <div className="userHeader__right">
@@ -25,7 +26,7 @@ function UserHeader() {
           <FoodSearch />
           </div>
         <div className="userHeader__rightButton">
-        <Button className='button__cart'><ShoppingCartIcon/>Items</Button>
+        <Button className='button__cart'><ShoppingCartIcon/>items</Button>
         </div>
         </div>
     </div>

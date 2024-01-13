@@ -1,70 +1,116 @@
-
 .userNavbar {
     margin-top: 10px;
     align-items: center;
     justify-content: center;
     padding: 10px;
     height: 100%;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0px;
 }
+
 .navbar__top {
     display: flex;
     flex-direction: column;
-    height: 80%;
+    height: 90%;
     align-items: left;
 }
-.navbar__topLeft {
+.userNavbar__topUser {
     display: flex;
-    align-items: center;
-    height: 100px;
-    background-color: red;
+    flex-direction: row;
+    max-height: 90px;
+}
+.userNavbar__topUser > .avatar {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
 }
 .navbar__topRight {
-    align-items: center;
-    justify-content: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
 }
-.navbar__links p{
+.navbar__topRight > p {
+    font-size: 14px;
+    text-transform: none;
+    font-weight: 500;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 5px;
+}
+.navbar__topRight > .manage__account {
+    color: #058848;
+}
+
+.navbar__links > .icon > p {
 font-weight: 500;
 cursor: pointer;
 font-size: 14px;
+margin-left: 20px;
+}
+.navbar__links > .icon {
+    padding-top: 20px;
+}
+.navbar__links > .icon >  .MuiSvgIcon-root { 
+    font-size: x-large !important;
+}
+.navbar__links > .signout {
+    margin: 20px;
+    margin-left: 17px;
+    font-size: 16px;
+    color: #6B6B6B;
 }
 .navbar__bottom {
     display: flex;
     flex-direction: column;
-    height: 30%;
-    margin-top: 10%;
+    height: 60%;
     justify-content: center;
+    margin-top: 0px;
+
 }
 .navbar__bottomList {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-left: -70px;
+    margin-left: -60px;
+    
 }
-.navbar__bottomIconList > p{
+.navbar__bottomList  > .text > p {
+    font-size: 14px;
+    font-weight: 500;
+}
+.navbar__bottomIconList {
+    margin-top: 30px;
+}
+.navbar__bottomIconList > p {
     width: auto;
     font-size: 16px;
     font-weight: 500;
     align-items: center;
     padding-left: 20px;
+    cursor: no-drop;
 }
 .navbar__bottomIconList > img {
-    height: 50px;
+    height: 60px;
 }
-
+.navbar__bottomButtons { 
+ align-items: center;
+ margin: 0px;
+ width: fit-content;
+}
 .apple__store{
     color: black !important;
     background-color: #e2e2e2 !important;
     border-radius: 20px !important;
     text-transform: capitalize !important;
     font-weight: 500 !important;
-    margin: 10px !important;
+    margin-left: 0px !important;
     
 }
  .apple__store:hover {
 cursor: pointer;
 background-color: #d1cece;
 }
- .MuiSvgIcon-root {
-    font-size: 30px !important;
+ .apple__store > .MuiSvgIcon-root {
+    font-size: large !important;
     cursor: pointer;
+    padding-right: 10px;
 }

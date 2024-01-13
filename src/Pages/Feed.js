@@ -34,10 +34,11 @@ import IJuice from '../assets/Brands/IJuice.jpeg'
 import Olivers from '../assets/Brands/Olivers.jpeg'
 import Snacks from '../assets/Brands/Snacks.jpeg'
 import SubWay from '../assets/Brands/SubWay.jpeg'
-
+import { useLocation } from 'react-router-dom';
 
 function Feed() {
   const [selectedItem, setSelectedItem] = useState(null);
+  const location = useLocation();
 
   useEffect (() => {
     
@@ -110,8 +111,8 @@ function Feed() {
 
   
   return (
-    <div className='feed'>
-        <FeedHeader />
+      <div className='feed'> 
+      {location.pathname === '/feed' && <FeedHeader />}
         {choiceSlides()}
         {filters()}
         <div className="feed__contentBrands">

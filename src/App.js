@@ -7,6 +7,7 @@ import Login from "./Pages/Login";
 import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
 import Feed from "./Pages/Feed";
 import UserHeader from "./Pages/UserHeader";
+import Dashboard from "./Pages/Dashboard";
 
 function App() {
   return (
@@ -23,12 +24,8 @@ function App() {
           <Feed />
         </Route>
         <Route path='/user'>
-        <UserHeader />
+        <Dashboard />
         </Route>
-       
-
-        
-
         {/* Home page is always the last one as it is prioritised.  */}
         <Route path='/'>
           <Home />

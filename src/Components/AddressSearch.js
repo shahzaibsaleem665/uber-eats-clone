@@ -24,6 +24,9 @@ const AddressSearch = () => {
     }
   };
   
+  const searchOptions = {
+    componentRestrictions: { country: ['AU'] }, // Set the default region to Australia (AU)
+  };
   const handleInputChange = (newAddress) => {
     setAddress(newAddress);
   }; 
@@ -34,6 +37,7 @@ const AddressSearch = () => {
         value={address}
         onChange={setAddress}
         onSelect={handleSelect}
+        searchOptions={searchOptions}
       >
         {({ getInputProps, suggestions, getSuggestionItemProps, loading }) => (
           <div className='inputField'>
